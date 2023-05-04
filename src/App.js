@@ -4,6 +4,7 @@ import Counter from './Counter';
 import ClickCounter from './ClickCounter';
 import ClickTracker from './ClickTracker';
 import InteractiveWelcome from './interactive-welcome/InteractiveWelcome';
+import Login from './Login';
 
 function App() {
   return (
@@ -11,10 +12,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <InteractiveWelcome/>
-        <Counter initialValue={5} incrementAmount={2} incrementInterval={500} />
+        {/* <Counter initialValue={5} incrementAmount={2} incrementInterval={500} />
         <ClickCounter/>
-        <ClickTracker/>
-        
+        <ClickTracker/> */}
+        <Login/>
       </header>
       
     </div>
