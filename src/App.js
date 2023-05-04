@@ -7,11 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Counter initialValue={1} incrementAmount={2} incrementInterval={500} />
+        <Counter initialValue={5} incrementAmount={2} incrementInterval={500} />
       </header>
       
     </div>
   );
 }
-
 export default App;
