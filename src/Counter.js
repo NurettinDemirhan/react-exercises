@@ -8,7 +8,7 @@ class Counter extends React.Component {
       count: props.initialValue
     };
   }
-
+//its already working like that
   componentDidMount() {
     const { incrementAmount, incrementInterval } = this.props;
     this.interval = setInterval(() => {
