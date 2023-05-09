@@ -10,6 +10,10 @@ function App() {
   const handleLogin = (userInfo) => {
     console.log("Logging in with:", userInfo);
   };
+  const handleLogin2 = (username, password, rememberMe) => {
+    console.log(`Username: ${username}, Password: ${password}, Remember me: ${rememberMe}`);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +23,7 @@ function App() {
         <ClickCounter/>
         <ClickTracker/> */}
         <Login onLogin={handleLogin} />
+        <UncontrolledLogin onLogin={handleLogin2} />
       </header>
       
     </div>
