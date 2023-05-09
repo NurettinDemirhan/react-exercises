@@ -4,6 +4,11 @@ function Login({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const handleReset = () => {
+    setUsername('');
+    setPassword('');
+  };
+
   const handleLogin = () => {
     onLogin({ username, password });
   };
@@ -31,6 +36,7 @@ function Login({ onLogin }) {
       <button disabled={isDisabled} onClick={handleLogin}>
         Login
       </button>
+      <button onClick={handleReset}>Reset</button>
     </div>
   );
 }
